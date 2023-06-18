@@ -5,6 +5,7 @@ body {
   /* box-sizing: border-box; */
   font-size: 15px;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -12,16 +13,68 @@ body {
   background-color: beige;
   outline: none;
 }
+
 ::after,
 ::before {
   box-sizing: border-box;
 }
 
-/* aside style  */
-.aside-content {
+.main-content-sec {
   background-color: aquamarine;
+  min-height: 100vh;
+  position: fixed;
+  left: 270px;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 1;
+  display: block;
+}
+
+/* aside style  */
+
+.aside-content {
+  /* background-color: aquamarine; */
   width: 270px;
   position: fixed;
   left: 0;
   top: 0;
+  height: 100%;
+  z-index: 10;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.aside-content .logo {
+  position: absolute;
+  top: 20px;
+  font-size: 70px;
+  text-transform: capitalize;
+}
+
+.aside-content ul {
+  margin-top: 170px;
+}
+
+.aside-content .navbar li {
+  margin: 25px auto;
+}
+
+.aside-content .navbar a {
+  font-weight: bolder;
+  color: blue;
+  font-size: 20px;
+  border-bottom: 2px double grey;
+
+}
+
+/* navbar sec  */
