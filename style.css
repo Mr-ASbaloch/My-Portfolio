@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
-* {
+body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: white;
 
+}
+#uni{
+    margin:auto 15%;
 }
 
 
@@ -36,7 +39,66 @@
     display: block;
     margin: 0px;
     padding: 15px;
-    color: brown;
+    color: blueviolet;
     background-color:transparent;
+    font-size: x-large;
 
 }
+.links a:hover , .social-link a:hover{
+    color: black;
+    
+    overflow: hidden;
+    
+}
+
+
+
+/* home section  */
+
+.home-sec{
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+.home-sec .about{
+    width: 50%;
+    text-transform: capitalize;
+    color:black;
+    margin-top: 110px;
+    text-align: justify;
+    font-weight: 500;
+}
+.home-sec .about button{
+    background: rgb(57,57,152);
+background: linear-gradient(90deg, rgba(57,57,152,1) 5%, rgba(0,212,255,1) 100%);
+    width: 150px;
+    height: 45px;
+   margin: 10px;
+   color: white;
+   font-size: normal;
+   border-radius: 15px;
+   padding: 10px;
+   cursor: pointer;
+  
+}
+.home-sec .image-sec{
+    width: 50%;
+}
+
+.home-sec .image-sec img{
+   
+    width: 80%;
+    border-radius: 60%;
+    border-top-left-radius: 20%;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
+
+#typing-effect {
+    font-family: monospace;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+  }
