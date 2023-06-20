@@ -5,38 +5,38 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: white;
 
 }
 
-.navbar {
-    display: flex;
-    /* border: 1px solid #7d3b3b; */
-    margin: 10px;
-}
 
-.navbar .logo img {
-    width: 100px;
-    margin-top: 0px;
-
-}
-
-.logo {
-    margin-top: 0px;
-}
 
 .links  {
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+   position: fixed;
+   top: 130px;
+   right: 80px;
     list-style: none;
-    margin-top: 25px;
-    
 
 }
+.social-link{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   position: fixed;
+   top: 130px;
+   left: 80px;
+   
+}
 
-.links a {
+.links a , .social-link a {
     text-decoration: none;
     display: block;
     margin: 0px;
-    padding: 15px
+    padding: 15px;
+    color: brown;
+    background-color:transparent;
 
 }
