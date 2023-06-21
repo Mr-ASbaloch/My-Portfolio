@@ -8,91 +8,99 @@ body {
     background-color: white;
 
 }
-#uni{
-    margin:auto 15%;
+
+#uni {
+    margin: auto 15%;
 }
 
 
 
-.links  {
+.links {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-   position: fixed;
-   top: 130px;
-   right: 80px;
+    position: fixed;
+    top: 130px;
+    right: 80px;
     list-style: none;
 
 }
-.social-link{
+
+.social-link {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-   position: fixed;
-   top: 130px;
-   left: 80px;
-   
+    position: fixed;
+    top: 130px;
+    left: 80px;
+
 }
 
-.links a , .social-link a {
+.links a,
+.social-link a {
     text-decoration: none;
     display: block;
     margin: 0px;
     padding: 15px;
     color: blueviolet;
-    background-color:transparent;
+    background-color: transparent;
     font-size: x-large;
 
 }
-.links a:hover , .social-link a:hover{
+
+.links a:hover,
+.social-link a:hover {
     color: black;
-    
+
     overflow: hidden;
-    
+
 }
 
 
 
 /* home section  */
 
-.home-sec{
+.home-sec {
     display: flex;
     /* border: 1px solid red; */
     margin: 10px;
 }
-.home-sec .about{
+
+.home-sec .about {
     width: 50%;
     text-transform: capitalize;
-    color:black;
+    color: black;
     margin-top: 110px;
     text-align: justify;
     font-weight: 500;
 }
-.home-sec .about button{
-    background: rgb(57,57,152);
-background: linear-gradient(90deg, rgba(57,57,152,1) 5%, rgba(0,212,255,1) 100%);
+
+.home-sec .about button {
+    background: rgb(57, 57, 152);
+    background: linear-gradient(90deg, rgba(57, 57, 152, 1) 5%, rgba(0, 212, 255, 1) 100%);
     width: 150px;
     height: 45px;
-   margin: 10px;
-   color: white;
-   font-size: normal;
-   border-radius: 15px;
-   padding: 10px;
-   cursor: pointer;
-  
+    margin: 10px;
+    color: white;
+    font-size: normal;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+
 }
-.home-sec .image-sec{
+
+.home-sec .image-sec {
     width: 50%;
 }
 
-.home-sec .image-sec img{
-   
+.home-sec .image-sec img {
+
     width: 80%;
     border-radius: 60%;
     border-top-left-radius: 20%;
     cursor: pointer;
     margin-top: 50px;
-    
+
 }
 
 #typing-effect {
@@ -101,4 +109,22 @@ background: linear-gradient(90deg, rgba(57,57,152,1) 5%, rgba(0,212,255,1) 100%)
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #000;
-  }
+}
+
+
+/* scroll  */
+
+.scroll {
+
+    margin: 120px 45%;
+}
+
+
+.scroll img {
+    width: 48px;
+    cursor: pointer;
+}
+
+.scroll img:hover {
+    padding: 2px;
+}
