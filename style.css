@@ -125,6 +125,10 @@ body {
     cursor: pointer;
 }
 
-.scroll img:hover {
-    padding: 2px;
+/* .scroll img:hover {
+ 
+} */
+
+.about-sec{
+    display: flex;
 }
