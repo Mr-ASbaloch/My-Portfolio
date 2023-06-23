@@ -51,7 +51,6 @@ body {
 .links a:hover,
 .social-link a:hover {
     color: black;
-
     overflow: hidden;
 
 }
@@ -129,6 +128,30 @@ body {
  
 } */
 
-.about-sec{
-    display: flex;
+.services-main{
+color: blueviolet;
+text-align: center;
 }
+
+.service-sec{
+    display: flex;
+  
+}
+.service-sec h3{
+    margin: 10px ;
+}
+.service-sec .service-sec-25{
+    width: 25%;
+    margin: 25px 5px;
+    text-align: justify;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+.service-sec-25 .fa-solid {
+padding: 5px;
+float: inline-start;
+margin: 0px 35%;
+
+}
+
+
