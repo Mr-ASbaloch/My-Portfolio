@@ -187,7 +187,10 @@ margin: 0px 35%;
     color: blue;font-weight: bold;
     cursor: pointer;
 }
-
+.service-sec-25 .fa-solid{
+    color: blueviolet;
+    font-size: large;
+}
 
 
 
