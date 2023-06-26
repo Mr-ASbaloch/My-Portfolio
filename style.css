@@ -8,6 +8,13 @@ body {
     background-color: white;
 
 }
+.main-sec{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    margin-top: 20px !important;
+}
 
 #uni {
     margin: auto 15%;
@@ -15,11 +22,10 @@ body {
 
 .header{
     display: flex;
-    border: 1px solid black;
-    background-color: aqua;
+    /* border: 1px solid black; */
+    /* background-color: aqua; */
     /* margin-top: 110px; */
-    position: fixed;
-    top: 10;
+   
       
 }
 .header ul {
@@ -224,7 +230,7 @@ title {
 }
 
 .say-hi  .icons a, .fa-solid{
-color: white;
+/* color: white; */
 margin-left: 20%;
 
 }
@@ -313,29 +319,26 @@ h5 {
 
 
 /* testonomial sec  */
-
-.wrapper {
-    margin: 135px auto;
-   
-}
-
-.card {
+.testo-card{
     display: flex;
-    border: 1px solid black;
-    width: 50%;
+    align-content: center;
+    align-items: center;
 }
 
-.card-50 {
-    width: 50%;
-    border: 1px solid black;
+.test-descr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 950px; */
 }
-
-.card-50 img {
-    height: 50%;
-    width: 100%;
-    margin-right: 0px;
+.test-descr img{
+    width: 55px ;
+    height: 55px ;
     object-fit: cover;
-    border-radius: 20%;
+}
+
+.swiper-button-next , .swiper-button-prev{
+    color: black;
 }
 
 

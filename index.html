@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- swiper js  -->
-    <link rel="stylesheet" href="./swiper/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <title>Portfolio </title>
 </head>
@@ -24,12 +24,12 @@
 <body>
 
     <!-- header section  -->
-    <section id="uni">
+    <section id="uni" class="main-sec">
         <div class="header">
             <div class="logo">
 
             </div>
-            
+
             <ul class="nav">
                 <li> <a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -81,7 +81,7 @@
     <!-- scroll number  -->
     <div class="scroll">
         <h4>Scroll Down</h4>
-        <img src="./images/download (9).png" alt="scroll-icon">
+        <h2><i class="fa-solid fa-angles-down"></i></h2>
     </div>
 
     <!-- Service Section  -->
@@ -122,32 +122,37 @@
     </div>
 
     <!-- testonomial section  -->
-    <section class="testo-container  swiper" id="uni">
-        <div class="testo-container-main">
-            <h1 style="text-align: center;">Client Testimonial</h1>
-        </div>
-        <div class="wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-                <div class="card-50">
-                    <img src="./images/download__27_-removebg-preview (1).png" alt="">
-                </div>
-                <div class="card-50">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                        born and I will give you a complete
-                        Jared Warner
-                        CEO Of Zeo</p><i class="fa-solid fa-quote-right"></i>
-                    <div class="address">
-                        <h3>Jared Warner</h3>
-                        <p>CEO Of Zeo</p>
+    <section id="uni">
+        <div class=" swiper mySwiper testo-main ">
+            <div class=" swiper-wrapper testo-card">
+                <div class="swiper-slide test-descr ">
+                    <div class="card-display">
+                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
+                            incidunt optio exercitati.</p>
                     </div>
                 </div>
-
+                <div class="test-descr">
+                    <div class="card-display">
+                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
+                            incidunt optio exercitati.</p>
+                    </div>
+                </div>
+                <div class="test-descr">
+                    <div class="card-display">
+                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
+                            incidunt optio exercitati.</p>
+                    </div>
+                </div>
+                
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+
     </section>
 
     <!-- contact section  -->
@@ -217,9 +222,23 @@
 
 
 
-    <script src="./swiper/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.js">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 
 </html>
