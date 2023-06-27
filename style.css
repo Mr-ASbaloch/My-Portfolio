@@ -8,7 +8,8 @@ body {
     background-color: white;
 
 }
-.main-sec{
+
+.main-sec {
     display: flex;
     position: sticky;
     top: 0;
@@ -20,21 +21,22 @@ body {
     margin: auto 15%;
 }
 
-.header{
+.header {
     display: flex;
     /* border: 1px solid black; */
     /* background-color: aqua; */
     /* margin-top: 110px; */
-   
-      
+
+
 }
+
 .header ul {
-   
+
     display: flex;
     list-style: none;
     align-items: center;
-   
-} 
+
+}
 
 
 
@@ -229,11 +231,13 @@ title {
     background-color: blueviolet;
 }
 
-.say-hi  .icons a, .fa-solid{
-/* color: white; */
-margin-left: 20%;
+.say-hi .icons a,
+.fa-solid {
+    /* color: white; */
+    margin-left: 20%;
 
 }
+
 .say-content {
     width: 100%;
     background-color: blueviolet;
@@ -275,7 +279,7 @@ h3 {
     /* border:1px solid black; */
     color: white;
     overflow: hidden;
-    background-color:goldenrod;
+    background-color: goldenrod;
 }
 
 
@@ -304,9 +308,11 @@ h5 {
     /* border: 1px solid black; */
     /* margin: 5px auto; */
     color: black;
-   
+
 }
-.contact-main .contact-main-30 .fa-solid , a {
+
+.contact-main .contact-main-30 .fa-solid,
+a {
     color: black;
     text-decoration: none;
     margin: auto 10px;
@@ -319,36 +325,38 @@ h5 {
 
 
 /* testonomial sec  */
-.testo-card{
+.testo-card {
     display: flex;
     align-content: center;
     align-items: center;
 }
 
-.test-descr{
+.test-descr {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* width: 950px; */
 }
-.test-descr img{
-    width: 55px ;
-    height: 55px ;
+
+.test-descr img {
+    width: 55px;
+    height: 55px;
     object-fit: cover;
 }
 
-.swiper-button-next , .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     color: black;
 }
 
 
- /* hire me section  */
+/* hire me section  */
 
 .contact-main-70 a {
     background-color: blueviolet;
     font-size: 16px;
     padding: 10px;
-    
+
     width: 120px;
     text-align: center;
     /* margin: 25px; */
@@ -363,10 +371,12 @@ h5 {
     text-transform: capitalize;
 
 }
-.contact-main-70 a:hover{
+
+.contact-main-70 a:hover {
     scale: 0.5s;
     background-color: goldenrod;
 }
+
 .contact-main-70 form {
     /* background-color: aquamarine; */
     align-items: center;
