@@ -9,6 +9,45 @@ body {
 
 }
 
+/* navbar  */
+.navbar{
+    display: flex;
+    display: none;
+}
+.navbar .logo > img{
+width: 100px;
+height:100px;
+object-fit: cover;
+margin: auto;
+}
+.navbar ul{
+    list-style: none;
+    display:flex ;
+
+
+}
+.navbar  a{
+display: block;
+padding: 15px 15px;
+
+}
+@media screen and  (max-width:525px) {
+    .navbar  {
+        display :flex;
+        flex-direction: column;
+        background-color:aquamarine;
+        width: 100vw;
+        align-items: center;
+        
+    }
+    .navbar ul{
+        display :flex;
+        flex-direction: column;
+        
+    }
+}
+
+
 .main-sec {
     display: flex;
     position: sticky;
