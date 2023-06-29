@@ -10,40 +10,45 @@ body {
 }
 
 /* navbar  */
-.navbar{
+.navbar {
     display: flex;
     display: none;
 }
-.navbar .logo > img{
-width: 100px;
-height:100px;
-object-fit: cover;
-margin: auto;
+
+.navbar .logo>img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: auto;
 }
-.navbar ul{
+
+.navbar ul {
     list-style: none;
-    display:flex ;
+    display: flex;
 
 
 }
-.navbar  a{
-display: block;
-padding: 15px 15px;
+
+.navbar a {
+    display: block;
+    padding: 15px 15px;
 
 }
-@media screen and  (max-width:525px) {
-    .navbar  {
-        display :flex;
+
+@media screen and (max-width:525px) {
+    .navbar {
+        display: flex;
         flex-direction: column;
-        background-color:aquamarine;
+        background-color: aquamarine;
         width: 100vw;
         align-items: center;
-        
+
     }
-    .navbar ul{
-        display :flex;
+
+    .navbar ul {
+        display: flex;
         flex-direction: column;
-        
+
     }
 }
 
@@ -131,11 +136,12 @@ title {
 .links a.tags span {
     display: none;
 }
-.social-link a.tags span{
-    display:none;
+
+.social-link a.tags span {
+    display: none;
 }
 
-.links a.tags:hover span{
+.links a.tags:hover span {
     border: #c0c0c0 1px dotted;
     padding: 3px;
     display: block;
@@ -160,10 +166,12 @@ title {
     right: 70px;
     text-decoration: none
 }
-.links a:active{
+
+.links a:active {
     border-bottom: 1px solid blueviolet;
 }
-.social-link a.tags:hover span{
+
+.social-link a.tags:hover span {
     border: 1px dotted rosybrown;
     padding: 3px;
     display: block;
@@ -172,7 +180,7 @@ title {
     color: white;
     font-size: x-small;
     font-weight: 900;
-    
+
     width: 80px;
     overflow: hidden;
     height: 17px;
@@ -320,6 +328,202 @@ title {
 .service-sec-25 .fa-solid {
     color: blueviolet;
     font-size: large;
+}
+
+
+/* skills section  */
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* gap: 20px;  */
+    /* border: 1px solid black; */
+    justify-content: space-between;
+
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    /* background-color: aqua; */
+    /* background: linear-gradient(0deg, #f6f6f8, #cdcbd6, hwb(60 99% 0%)); */
+    
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    transition: 0.5s;
+    height: 250px;
+    cursor: pointer;
+   
+}
+.container .card:hover{
+    transform:translateY(-10px);
+  /* box-shadow: 0 14px 5px black; */
+   
+}
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:transparent;
+    z-index: 1000;
+   
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+
+}
+.percent .number h2{
+    color: darkorange;
+    font-weight: 500;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.card:hover .percent .number h2{
+    font-size: 50px;
+}
+.percent .number h2 span {
+    font-size: 24px;
+}
+.test{
+    position: relative;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+    animation: fillbars 0.7s 1;
+    
+}
+@keyframes fillbars{
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    stroke: hwb(60 95% 4%);
+    fill: none;
+   
+    stroke-width: 7;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    
+}
+
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  
+    
+    stroke-dashoffset: calc(440 - (440 * 95 )/100);
+    stroke:rgb(255, 0, 0);
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 90 )/100);
+    stroke: rgb(255, 157, 0);
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 86.5 )/100);
+    stroke: crimson;
+}
+
+.card:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80 )/100);
+    stroke:forestgreen;
+}
+
+.card:nth-child(5) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75 )/100);
+    stroke: rgb(54, 57, 57);
+}
+
+.card:nth-child(6) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70 )/100);
+    stroke: rgb(55, 0, 255);
+}
+
+
+/* professional skills  */
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+   
+   
+}
+.skill-name{
+    /* font-size: 10px; */
+    color: blue;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 16px;
+    border-radius: 3px;
+    background-color: darkgray;
+}
+.skill-per{
+    height: 16px;
+    background-color: fuchsia;
+    position: relative;
+    animation: fillbars 1s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px;
+    background:rgb(106, 20, 211);
+    border-radius: 4px;
+    font-size: 18px;
+    top: -35px;
+    right: 0;
+    color: white;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgb(106, 20, 211);
+    position: absolute;
+  top: -12px;
+  right: 0;
+  transform: translateX(50% ) rotate(45deg); 
 }
 
 
@@ -512,8 +716,8 @@ textarea {
 
 /* scroll up  */
 /*Scroll to top button*/
-#scrollTop{
-    display:none;
+#scrollTop {
+    display: none;
     font-size: 380%;
     right: 30px;
     bottom: 30px;
@@ -528,10 +732,12 @@ textarea {
     transition: 0.5s;
     text-decoration: none;
 }
-#scrollTop:hover{
+
+#scrollTop:hover {
     background-color: rgb(123, 123, 255);
     transition: 0.5s;
 }
-#scrollTop:active{
+
+#scrollTop:active {
     background-color: rgb(0, 0, 148);
 }
