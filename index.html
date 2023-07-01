@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- javascript link  -->
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 
     <!-- favicon link  -->
     <link rel="shortcut icon" href="./images/bag.png" type="image/x-icon">
@@ -23,34 +23,42 @@
 
 <body>
 
+
+
+
     <!-- navbar  -->
     <section id="uni">
-        <nav class="navbar">
+        <nav class="navbar-toggler">
             <div class="logo">
                 <img src="/images/download__8_-removebg-preview.png" alt="">
             </div>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Services</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Services</a>
+                    </li>
+                    <li>
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="toggler">
-                <div class="col" style="width: 30px ; height: 4px; background-color: black;"></div>
-                <div class="col" style="width: 20px ; height: 4px; background-color: black;"></div>
-                <div class="col" style="width: 10px ; height: 4px; background-color: black;"></div>
+            <div class="toggler" style="cursor: pointer; margin-top: 12px; ">
+                <div class="col" style="width: 25px; height: 3px ; background-color: black ; margin-top: 20px ;"></div>
+                <div class="col"
+                    style="width: 25px; height: 3px ; background-color: rgb(7, 7, 7)  ; margin-top: 5px ; ">
+                </div>
+                <div class="col" style="width: 25px; height: 3px ; background-color: black ; margin-top: 5px ; "></div>
+
             </div>
         </nav>
 
@@ -109,7 +117,7 @@
     <div class="services" id="uni">
 
         <div class="services-main">
-            <h1>Services</h1>
+            <h1 style="text-decoration: underline ;">Services</h1>
             <p>What I DO</p>
         </div>
         <div class="service-sec">

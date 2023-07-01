@@ -10,46 +10,125 @@ body {
 }
 
 /* navbar  */
-.navbar {
-    display: flex;
+.navbar-toggler {
+    /* display: flex; */
     display: none;
 }
 
-.navbar .logo>img {
+.toggler .col {
+    background-color: blueviolet !important;
+}
+
+.navbar-toggler .logo>img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin: auto;
+    cursor: pointer;
 }
 
-.navbar ul {
+.navbar-toggler ul {
     list-style: none;
+
     display: flex;
 
 
 }
 
-.navbar a {
+.navbar-toggler>a {
     display: block;
     padding: 15px 15px;
 
 }
 
-@media screen and (max-width:525px) {
-    .navbar {
+
+@media screen and (max-width:900px) {
+    #uni {
+        margin: 10px !important;
+    }
+
+    .logo img {
+
+        margin: 115px;
+    }
+
+    .navbar-toggler {
+        margin: 0px;
         display: flex;
-        flex-direction: column;
-        background-color: aquamarine;
-        width: 100vw;
+        justify-content: space-between;
+        width: 100%;
         align-items: center;
+        border: 1px solid saddlebrown;
 
     }
 
-    .navbar ul {
+
+    .toggler {
+        display: inline;
+        margin-top: 0px;
+    }
+
+    .navbar-toggler .nav {
+        position: absolute;
         display: flex;
+        top: 100px;
+        left: 0;
+        border-radius: 10px;
+        right: 0;
+        width: 100%;
+        height: 0px;
+        background: #c2bebe;
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navbar-toggler .nav ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        line-height: 18px;
+        opacity: 0;
 
     }
+
+    .navbar-toggler .nav ul li a {
+        display: block;
+        margin-bottom: 18px;
+        font-size: large;
+        color: white;
+    }
+
+    .nav.active {
+        height: 350px;
+        transition: 0.5s;
+        background-color: black;
+        opacity: 1;
+    }
+
+    .nav.active ul {
+        opacity: 1;
+    }
+
+    .nav.active li:hover {
+        background-color: aliceblue;
+
+        font-size: larger;
+        color: rgb(198, 226, 43);
+        width: auto;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+
+    .nav.active a:hover {
+        display: block;
+        overflow: hidden;
+        color: black;
+        transition: .5s;
+
+
+    }
+
 }
 
 
@@ -347,7 +426,7 @@ title {
     display: flex;
     /* background-color: aqua; */
     /* background: linear-gradient(0deg, #f6f6f8, #cdcbd6, hwb(60 99% 0%)); */
-    
+
     width: 250px;
     justify-content: center;
     text-align: center;
@@ -356,23 +435,26 @@ title {
     transition: 0.5s;
     height: 250px;
     cursor: pointer;
-   
+
 }
-.container .card:hover{
-    transform:translateY(-10px);
-  /* box-shadow: 0 14px 5px black; */
-   
+
+.container .card:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 14px 5px black; */
+
 }
+
 .percent {
     position: relative;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color:transparent;
+    background-color: transparent;
     z-index: 1000;
-   
+
 }
-.percent .number{
+
+.percent .number {
     position: absolute;
     top: 0;
     left: 0;
@@ -384,19 +466,23 @@ title {
     color: white;
 
 }
-.percent .number h2{
+
+.percent .number h2 {
     color: darkorange;
     font-weight: 500;
     font-size: 40px;
     transition: 0.5s;
 }
-.card:hover .percent .number h2{
+
+.card:hover .percent .number h2 {
     font-size: 50px;
 }
+
 .percent .number h2 span {
     font-size: 24px;
 }
-.test{
+
+.test {
     position: relative;
     font-weight: 700;
     font-size: 25px;
@@ -415,13 +501,15 @@ svg {
     height: 150px;
     z-index: 1000;
     animation: fillbars 0.7s 1;
-    
+
 }
-@keyframes fillbars{
+
+@keyframes fillbars {
     from {
         width: 0;
     }
-    to{
+
+    to {
         width: 100%;
     }
 }
@@ -431,7 +519,7 @@ svg circle {
     height: 100%;
     stroke: hwb(60 95% 4%);
     fill: none;
-   
+
     stroke-width: 7;
     stroke-linecap: round;
     transform: translate(5px, 5px);
@@ -441,73 +529,77 @@ svg circle {
 svg circle:nth-child(2) {
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
-    
+
 }
 
 
 .card:nth-child(1) svg circle:nth-child(2) {
-  
-    
-    stroke-dashoffset: calc(440 - (440 * 95 )/100);
-    stroke:rgb(255, 0, 0);
+
+
+    stroke-dashoffset: calc(440 - (440 * 95)/100);
+    stroke: rgb(255, 0, 0);
 }
 
 .card:nth-child(2) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 90 )/100);
+    stroke-dashoffset: calc(440 - (440 * 90)/100);
     stroke: rgb(255, 157, 0);
 }
 
 .card:nth-child(3) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 86.5 )/100);
+    stroke-dashoffset: calc(440 - (440 * 86.5)/100);
     stroke: crimson;
 }
 
 .card:nth-child(4) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 80 )/100);
-    stroke:forestgreen;
+    stroke-dashoffset: calc(440 - (440 * 80)/100);
+    stroke: forestgreen;
 }
 
 .card:nth-child(5) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 75 )/100);
+    stroke-dashoffset: calc(440 - (440 * 75)/100);
     stroke: rgb(54, 57, 57);
 }
 
 .card:nth-child(6) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 70 )/100);
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
     stroke: rgb(55, 0, 255);
 }
 
 
 /* professional skills  */
-.skills{
+.skills {
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
-   
-   
+
+
 }
-.skill-name{
+
+.skill-name {
     /* font-size: 10px; */
     color: blue;
     text-transform: uppercase;
     margin: 20px 0;
 }
-.skill-bar{
+
+.skill-bar {
     height: 16px;
     border-radius: 3px;
     background-color: darkgray;
 }
-.skill-per{
+
+.skill-per {
     height: 16px;
     background-color: fuchsia;
     position: relative;
     animation: fillbars 1s 1;
 }
-.skill-per::before{
+
+.skill-per::before {
     content: attr(per);
     position: absolute;
     padding: 4px;
-    background:rgb(106, 20, 211);
+    background: rgb(106, 20, 211);
     border-radius: 4px;
     font-size: 18px;
     top: -35px;
@@ -515,15 +607,16 @@ svg circle:nth-child(2) {
     color: white;
     transform: translateX(50%);
 }
-.skill-per::after{
+
+.skill-per::after {
     content: "";
     width: 10px;
     height: 10px;
     background: rgb(106, 20, 211);
     position: absolute;
-  top: -12px;
-  right: 0;
-  transform: translateX(50% ) rotate(45deg); 
+    top: -12px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
 }
 
 
