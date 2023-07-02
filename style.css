@@ -44,7 +44,12 @@ body {
 
 @media screen and (max-width:900px) {
     #uni {
-        margin: 10px !important;
+        margin: 5% !important;
+    }
+
+    .navbar .social-link,
+    .navbar .links {
+        display: none;
     }
 
     .logo img {
@@ -219,6 +224,7 @@ title {
 .social-link a.tags span {
     display: none;
 }
+
 
 .links a.tags:hover span {
     border: #c0c0c0 1px dotted;
