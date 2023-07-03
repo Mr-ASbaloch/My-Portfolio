@@ -209,13 +209,15 @@ title {
     display: block;
     margin: 0px;
     padding: 15px;
-    color: blueviolet;
+    /* color: blueviolet; */
+    color: #750550;
     background-color: transparent;
     font-size: x-large;
     transition: 1s;
 
 
 }
+
 
 .links a.tags span {
     display: none;
@@ -230,7 +232,7 @@ title {
     border: #c0c0c0 1px dotted;
     padding: 3px;
     display: block;
-    background-color: blueviolet;
+    background-color: #980F5A;
     text-transform: capitalize;
     color: white;
     font-size: x-small;
@@ -253,14 +255,14 @@ title {
 }
 
 .links a:active {
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid #980F5A;
 }
 
 .social-link a.tags:hover span {
     border: 1px dotted rosybrown;
     padding: 3px;
     display: block;
-    background-color: blueviolet;
+    background-color: #980F5A;
     text-transform: capitalize;
     color: white;
     font-size: x-small;
@@ -281,8 +283,9 @@ title {
 
 .links a:hover,
 .social-link a:hover {
-    color: black;
+    color: #6D67E4;
     overflow: hidden;
+    transition: 0.3s;
 
 }
 
