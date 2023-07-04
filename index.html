@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- swiper js  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <title>Portfolio </title>
 </head>
@@ -121,29 +121,60 @@
             <p>What I DO</p>
         </div>
         <div class="service-sec">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>This is the additional content you want to show.</p>
+                </div>
+            </div>
             <div class="service-sec-25">
                 <i class="fa-solid fa-pencil"></i>
                 <h4>Ui & UX Design </h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button>Read more...</button>
+                <button id="read-more-btn">Read more...</button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>This is the additional content you want to show.</p>
+                </div>
             </div>
             <div class="service-sec-25">
                 <i class="fa-solid fa-file-code"></i>
                 <h4>Figma to html </h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button>Read more...</button>
+                <button id="read-more-btn">Read more...</button>
+
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>This is the additional content you want to show.</p>
+                </div>
             </div>
             <div class="service-sec-25">
                 <i class="fa-solid fa-code"></i>
                 <h4>Problem Solving </h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button>Read more...</button>
+                <button id="read-more-btn">Read more...</button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>This is the additional content you want to show.</p>
+                </div>
             </div>
             <div class="service-sec-25">
                 <i class="fa-solid fa-computer"></i>
                 <h4>Web Development</h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button>Read more...</button>
+                <button id="read-more-btn">Read more...</button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>This is the additional content you want to show.</p>
+                </div>
             </div>
         </div>
 
@@ -269,57 +300,69 @@
 
     <!-- testonomial section  -->
     <section id="uni">
-        <div class=" swiper mySwiper testo-main ">
-            <div class=" swiper-wrapper testo-card">
-                <div class="swiper-slide test-descr ">
-                    <div class="card-display">
-                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
-                            incidunt optio exercitati.</p>
+        <h1 style="text-align: center;">Client Testimonial</h1>
+
+        <div class="swiper mySwiper" id="uni">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                      
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p> </i>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain
+                            was born and I will give you a complete</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="details">
+                            <img src="./images/download-removebg-preview (2).png" alt="img"
+                            style="width: 80px;  border-radius: 50%;  background-color: gray; object-fit: contain;">
+                            <h2>Abdul Saeed</h2>
+                            <h5>software developer</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="test-descr">
-                    <div class="card-display">
-                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
-                            incidunt optio exercitati.</p>
+                <div class="swiper-slide">
+                    <div class="box">
+                      
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p> </i>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain
+                            was born and I will give you a complete</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="details">
+                            <img src="./images/download-removebg-preview (2).png" alt="img"
+                            style="width: 80px;  border-radius: 50%;  background-color: gray; object-fit: contain;">
+                            <h2>Abdul Saeed</h2>
+                            <h5>software developer</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="test-descr">
-                    <div class="card-display">
-                        <img src="./images/download-removebg-preview__2_-removebg-preview.png" alt="img">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsam, magnam enim ex
-                            incidunt optio exercitati.</p>
+                <div class="swiper-slide">
+                    <div class="box">
+                      
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p> </i>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain
+                            was born and I will give you a complete</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                        <div class="details">
+                            <img src="./images/download-removebg-preview (2).png" alt="img"
+                            style="width: 80px;  border-radius: 50%;  background-color: gray; object-fit: contain;">
+                            <h2>Abdul Saeed</h2>
+                            <h5>software developer</h5>
+                        </div>
                     </div>
                 </div>
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next" style="display: none;"> </div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination" style="color: rgb(255, 127, 168);"></div>
         </div>
-
     </section>
 
     <!-- contact section  -->
 
 
-    <section class="say-hi" id="uni">
-        <div class="say-content">
-            <p style="text-decoration: underline;color: ghostwhite;">Get in touch
-            </p>
-            <h3>Just Say Hello! 🖐</h3>
-
-            <a href="tel:+923056077280 ">Contact</a>
-
-        </div>
-        <div class="icons" style="margin: 5px auto;">
-            <a href=""> <i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i> </a>
-            <a> <i class="fa-brands fa-linkedin"></i> </a>
-        </div>
-
-    </section>
 
     <!-- hire me section  -->
 
@@ -378,13 +421,16 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
             spaceBetween: 30,
-            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
