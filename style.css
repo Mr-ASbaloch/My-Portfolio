@@ -9,6 +9,12 @@ body {
 
 }
 
+body section>h2 {
+    font-size: x-large;
+    font-weight: 200;
+
+}
+
 /* navbar  */
 .navbar-toggler {
     /* display: flex; */
@@ -1060,19 +1066,21 @@ textarea {
 
     .service-sec .service-sec-25 {
 
-        border: 1px solid black;
-        width: 750%;
+
+        width: 100%;
         text-align: center;
     }
 
 
     .swiper {
-        width: 100%;
+        width: 80%;
+        margin: 0px 10px;
+
     }
 
     .swiper-slide .box {
         width: 100%;
-
+        margin: 0px 50px;
         padding: 10px;
         /* border: 1px solid blue; */
         margin-top: 115px;
@@ -1094,8 +1102,13 @@ textarea {
     }
 
     .contact-main-30 {
+        width: 370px;
+        border: 1px solid saddlebrown;
+    }
+
+    .contact-main-30 p {
+        text-align: justify !important;
         width: 100%;
-        /* border: 1px solid saddlebrown; */
     }
 
     .contact-main-70 {
@@ -1110,18 +1123,19 @@ textarea {
     .contact-main-70 .form-sec {
         width: 100% !important;
 
-      
-    }
-    .form-sec input,
-textarea {
-    
-    height: 5px;
-    width: 100%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid black;
-    resize: none;
-    margin: 2px auto;
 
-}
+    }
+
+    .form-sec input,
+    textarea {
+
+        height: 5px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid black;
+        resize: none;
+        margin: 2px auto;
+
+    }
 }
