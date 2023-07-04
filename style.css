@@ -776,9 +776,11 @@ a {
 
 /* testonomial sec  */
 .swiper {
-    width: 100%;
+    width: 50%;
     height: 100%;
+   
   }
+  
 
   .swiper-slide {
     text-align: center;
@@ -788,18 +790,48 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+   
   }
   .swiper-wrapper > .swiper-button-next{
     color: #980F5A;
     background-color: #980F5A;
   }
   .swiper-slide .box{
-    width: 300px;
+    width: 450px;
     margin: 10px;
     padding: 10px;
+    /* border: 1px solid blue; */
+    margin-top: 115px;
+    margin-bottom: 10px;
+  }
+  .box p,h5{
+    text-align: center;
+    display: block;
+  }
+  .box p > i{
+    margin: 10px 10px;
+    color: blueviolet;
+    font-size: x-large;
+
+  }
+  .box .details{
+    display: flex;
+    
   }
   
+  .intro-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 25px;
+  }
+  .intro-div h5{
+    margin-bottom: 0px;
+  }
+  .intro-div p{
+    margin-top: 0px;
+  }
 
 
   /* .swiper-slide img {
