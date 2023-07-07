@@ -103,7 +103,7 @@ body section>h2 {
     position: fixed;
     top: 110px;
     left: 30px;
-    
+
 
 }
 
@@ -121,7 +121,7 @@ title {
     margin: 0px;
     padding: 5px;
     margin-top: 15px;
-    
+
     /* color: blueviolet; */
     color: #750550;
     background-color: transparent;
@@ -268,9 +268,26 @@ title {
 
 .scroll {
 
-    margin: 120px 45%;
+    /* margin: 120px 45%; */
+    
+    height: 200px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
 }
-
+.bounce-1 {
+    font-size: x-large;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes bounce-1 {
+   
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
 
 .scroll img {
     width: 48px;
@@ -382,70 +399,115 @@ title {
 
 /* portfolio section  */
 
-.portfolio{
-    margin: 25px ;
+.portfolio {
+    margin: 25px;
 
 }
-.portfolio-container{
+
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid cadetblue;
-    
+    /* border: 1px solid cadetblue; */
+
 }
- .portfolio-box{
-    border: 1px solid black;
+
+.portfolio-box {
+    /* border: 1px solid black; */
     display: flex;
     width: 40%;
     position: relative;
     margin: 5px auto;
     border-radius: 30px;
-   
+    box-shadow: 0px 2px 7px rgb(56, 56, 56);
+
 }
+
 .portfolio-box img {
-    width:100%;
+    width: 100%;
     background: center;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 30px;
-    opacity: 0.5;
-    
+    opacity: 0.2;
+
 }
-.portfolio-box  .portfolio-layer{
+
+.portfolio-box .portfolio-layer {
     /* background-color: #6d67e426; */
-  
-      display: flex;
+
+    display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 30px;
     padding: 5px;
-    top:0 ;
+    top: 0;
     left: 0;
-    
+    opacity: 0;
     position: absolute;
     overflow: hidden;
-   
-    
-}
-.portfolio-box:hover {
-    /* background: linear-gradient(90deg, rgba(57,108,152,0.6941964285714286) 5%, rgba(0,255,215,0.6241684173669468) 100%);; */
-  transition: 0.8s;
-  background: rgb(213,215,48);
-background: linear-gradient(90deg, rgba(213,215,48,1) 0%, rgba(68,76,194,0.6913953081232493) 67%);
-  transform: scale(0.9);
-  
+
 
 }
-.portfolio-box .portfolio-layer  h4{
-    text-align: center;
-    font-size: large;
-    text-transform: uppercase;
+
+.portfolio-box:hover {
+    /* background: linear-gradient(90deg, rgba(57,108,152,0.6941964285714286) 5%, rgba(0,255,215,0.6241684173669468) 100%);; */
+    transition: 0.8s;
+    background: rgb(213, 215, 48);
+    background: linear-gradient(90deg, rgba(213, 215, 48, 1) 33%, rgba(68, 76, 194, 0.7250087535014005) 100%);
+    transform: scale(0.9);
+
+
+
 }
+
+.portfolio-layer:hover {
+    opacity: 1;
+}
+
+.portfolio-box .portfolio-layer h4 {
+    text-align: center;
+    color: blueviolet;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.portfolio-layer h4,
+p,
+a,
+i {
+    margin-top: 1px;
+    /* padding: 5px; */
+
+}
+
 .portfolio-layer a {
-    display:inline-flex;
+    display: inline-flex;
     font-size: larger;
 }
+
+.portfolio-layer i:hover {
+    color: blue;
+}
+
+.portfolio-layer a i {
+    /* background-color: #750550; */
+    color: rgb(5, 4, 4);
+    align-items: center;
+    margin: 0px auto;
+
+}
+
+.portfolio-layer p {
+    text-align: center;
+    /* text-align: justify; */
+    margin-bottom: 0px;
+    text-transform: capitalize;
+
+}
+
+
 
 
 
@@ -454,7 +516,7 @@ background: linear-gradient(90deg, rgba(213,215,48,1) 0%, rgba(68,76,194,0.69139
 .container {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* gap: 20px;  */
     /* border: 1px solid black; */
     justify-content: space-between;
@@ -467,34 +529,40 @@ background: linear-gradient(90deg, rgba(213,215,48,1) 0%, rgba(68,76,194,0.69139
     /* background-color: aqua; */
     /* background: linear-gradient(0deg, #f6f6f8, #cdcbd6, hwb(60 99% 0%)); */
 
-    width: 250px;
+    width: 150px;
+    height: 150px;
     justify-content: center;
     text-align: center;
+    /* margin-top:2px ; */
+    margin: 15px;
+    padding: 5px;
+    box-shadow: 0px 3px 7px gray;
     /* border: 1px solid black; */
     border-radius: 5px;
     transition: 0.5s;
-    height: 250px;
+    /* height: 250px; */
     cursor: pointer;
 
 }
 
-.container .card:hover {
+ /* .container .card .box:hover{ 
     transform: translateY(-10px);
-    /* box-shadow: 0 14px 5px black; */
+    transform: scale(1.1);
+    box-shadow: 0 14px 5px black;
 
-}
+}  */
 
 .percent {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 50px;
     border-radius: 50%;
     background-color: transparent;
     z-index: 1000;
 
 }
 
-.percent .number {
+.percent .number  {
     position: absolute;
     top: 0;
     left: 0;
@@ -504,29 +572,35 @@ background: linear-gradient(90deg, rgba(213,215,48,1) 0%, rgba(68,76,194,0.69139
     justify-content: center;
     border-radius: 50%;
     color: white;
+   
 
 }
 
 .percent .number h2 {
+    position: absolute;
+    /* margin-top: 1px; */
     color: darkorange;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 26px;
     transition: 0.5s;
 }
 
-.card:hover .percent .number h2 {
+/* .card:hover .percent .number h2 {
     font-size: 50px;
-}
+} */
 
 .percent .number h2 span {
     font-size: 24px;
+    /* color: #980F5A; */
 }
 
 .test {
-    position: relative;
-    font-weight: 700;
-    font-size: 25px;
+    /* position: relative; */
+    /* position: absolute; */
+    /* font-weight: 700;
+    font-size: 25px; */
     transition: 0.5s;
+    color: #980F5A;
     letter-spacing: 1px;
     text-transform: uppercase;
 
@@ -784,11 +858,14 @@ a {
 
 .swiper-slide .box {
     width: 450px;
-    margin: 10px;
-    padding: 10px;
+    /* margin: 10px; */
+    margin-left: 20px;
+
+    background-color: aqua;
+    /* padding: 10px; */
     /* border: 1px solid blue; */
-    margin-top: 115px;
-    margin-bottom: 10px;
+    /* margin-top: 115px; */
+    margin-bottom: 35px;
 }
 
 .box p,
@@ -1079,11 +1156,12 @@ textarea {
         margin-top: 115px;
         margin-bottom: 10px;
     }
-    .skills{
+
+    .skills {
         width: 100%;
         max-width: 500px;
         /* border: 1px solid blue; */
-       
+
 
     }
 
@@ -1163,7 +1241,7 @@ textarea {
         margin-bottom: 10px;
     }
 
-    
+
     .contact {
         display: flex;
         width: 100%;
