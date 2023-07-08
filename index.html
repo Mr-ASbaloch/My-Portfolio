@@ -70,10 +70,10 @@
     <div class="container">
         <div class="navbar">
             <div class="links">
-                <a href="#" class="tags"> <span>home</span><i class="fa-solid fa-house-user"></i> </a>
-                <a href="#about" class="tags"> <span>About</span><i class="fa-solid fa-address-card"></i></a>
-                <a href="#services" class="tags"> <span>services</span><i class="fa-solid fa-briefcase"></i> </a>
-                <a class="tags" href="#portrfolio"> <span>portfolio</span><i class="fa-solid fa-layer-group"></i></a>
+                <a href="#about" class="tags"> <span>about</span><i class="fa-solid fa-house-user"></i> </a>
+                <a href="#services" class="tags"> <span>services</span><i class="fa-solid fa-address-card"></i></a>
+                <a href="#portfolio" class="tags"> <span>portfolio</span><i class="fa-solid fa-briefcase"></i> </a>
+                <a class="tags" href="#projects"> <span>projects</span><i class="fa-solid fa-layer-group"></i></a>
                 <a class="tags" href="#contact"> <span> contact</span><i class="fa-solid fa-comments"></i></a>
             </div>
             <div class="social-link">
@@ -94,7 +94,7 @@
     <section id="uni">
         <div style="margin-top: 5px auto; text-align: center;">
 
-            <h2 style="text-transform: capitalize; margin-bottom: 0px;" >about me</h2>
+            <h2 style="text-transform: capitalize; margin-bottom: 0px;">about me</h2>
             <hr style="width: 70px; height: 3px; background-color: blue; margin-bottom: 1px; margin-top: 0px; ">
             <hr style="width: 40px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px;">
             <hr style="width: 10px; height: 3px; background-color: blue; margin-top: 1px;">
@@ -102,14 +102,15 @@
 
         </div>
         <div class="home-sec">
-            <div class="about">
-                <h2 style="text-transform: lowercase;"> <span style="text-transform: capitalize;">Hi</span> , I am <span
-                        style="text-transform: capitalize; color: blueviolet;">Abdul Saeed</span></h2>
-
+            <div class="about" id="about">
+                <h2 style="text-transform: lowercase;"> <span style="text-transform: capitalize;">Hi</span> 🖐  My name is
+                    <span style="text-transform: capitalize; color: blueviolet; ">Abdul Saeed</span></h2>
+                <h2 style="text-transform: lowercase;"> <b style="text-transform: capitalize;"></b> <span
+                        style="text-transform: capitalize; color: rgb(253, 7, 175); " id="typing">web developer</span></h2>
                 <p> I am a passionate software developer. With a strong foundation in
                     programming languages . Constantly keeping up with the latest industry trends, I strive to enhance
                     my
-                    skills and stay updated on emerging technologies.
+                    skills and stay updated on emerging technologies. 
                 </p>
                 <button>Download CV</button>
             </div>
@@ -124,14 +125,14 @@
     </section>
 
     <!-- scroll number  -->
-   
+
 
     <!-- Service Section  -->
 
     <div class="services" id="uni">
-        <div style="margin-top: 5px auto; text-align: center;">
+        <div style="margin-top: 5px auto; text-align: center;" >
 
-            <h2 style="text-transform: capitalize; margin-bottom: 0px;">Services</h2>
+            <h2 style="text-transform: capitalize; margin-bottom: 0px;"  id="services">Services</h2>
 
             <hr style="width: 70px; height: 3px; background-color: blue; margin-bottom: 1px; margin-top: 0px; ">
             <hr style="width: 40px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px;">
@@ -140,22 +141,22 @@
 
         </div>
 
-        <div class="services-main" id="services">
+        <div class="services-main">
 
 
         </div>
         <div class="service-sec">
-            <div id="popup" class="popup">
+            <!-- <div id="popup" class="popup">
                 <div class="popup-content">
                     <span class="close-btn" onclick="closePopup()">&times;</span>
                     <p>This is the additional content you want to show.</p>
                 </div>
-            </div>
+            </div> -->
             <div class="service-sec-25">
                 <i class="fa-solid fa-pencil"></i>
                 <h4>Ui & UX Design </h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button id="read-more-btn">Read more...</button>
+                <button id="read-more-btn" onclick="openPopup()">Read more...</button>
             </div>
             <div id="popup" class="popup">
                 <div class="popup-content">
@@ -167,7 +168,7 @@
                 <i class="fa-solid fa-file-code"></i>
                 <h4>Figma to html </h4>
                 <p> the user friendly interface for an app, website, or other interactive media</p>
-                <button id="read-more-btn">Read more...</button>
+                <button id="read-more-btn" onclick="openPopup()">Read more...</button>
 
             </div>
             <div id="popup" class="popup">
@@ -206,8 +207,8 @@
 
     <!-- progess bar section  -->
 
-    <section id="uni">
-        <div style="margin-top: 5px auto; text-align: center;">
+    <section id="uni" >
+        <div style="margin-top: 5px auto; text-align: center;"  id="portfolio">
 
             <h2 style="text-transform: capitalize; margin-bottom: 0px; margin-top: 55px;">Portfolio</h2>
 
@@ -318,14 +319,14 @@
         </div>
 
         <div>
-            <h4 style="text-transform: capitalize; margin-bottom: 0px; margin-top: 5px;">professional  skills</h4>
+            <h4 style="text-transform: capitalize; margin-bottom: 0px; margin-top: 5px;">professional skills</h4>
             <hr
                 style="width: 60px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px; margin-left: 0px;">
             <hr style="width: 40px; height: 3px; background-color: blue; margin-top: 1px; margin-left: 0px;">
 
         </div>
 
-        <div class="skills" style="margin-top: 45px;" >
+        <div class="skills" style="margin-top: 45px;">
             <div class="skill">
                 <div class="skill-name">communication </div>
                 <div class="skill-bar">
@@ -348,19 +349,19 @@
         </div>
     </section>
 
-    <!-- portfolio section  -->
+    <!-- projects section  -->
 
-    <section id="uni">
+    <section id="uni ">
         <div class="portfolio">
-            <div style="margin-top: 5px auto; text-align: center;">
+            <div style="margin-top: 5px auto; text-align: center;"  >
 
-                <h2 style="text-transform: capitalize; margin-bottom: 0px;">latest projects</h2>
-    
+                <h2 style="text-transform: capitalize; margin-bottom: 0px;"  id="projects">latest projects</h2>
+
                 <hr style="width: 70px; height: 3px; background-color: blue; margin-bottom: 1px; margin-top: 0px; ">
                 <hr style="width: 40px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px;">
                 <hr style="width: 10px; height: 3px; background-color: blue; margin-top: 1px;">
-    
-    
+
+
             </div>
             <div class="portfolio-container">
                 <div class="portfolio-box">
@@ -369,7 +370,8 @@
                         <h4>dcms</h4>
                         <p>a dental clinic mamagement system build c# mysql databse is used for data storage full user
                             friendly </p>
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/Mr-ASbaloch/dental-clinic-system-c-" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
 
                     </div>
                 </div>
@@ -415,7 +417,7 @@
 
     <!-- testonomial section  -->
     <section id="uni">
-        <div style="margin-top: 5px auto; text-align: center;">
+        <div style="margin-top: 5px auto; text-align: center;" id="testonomial">
 
             <h2 style="text-transform: capitalize; margin-bottom: 0px;">Client testonomial</h2>
 
@@ -425,15 +427,13 @@
 
 
         </div>
-        
+
         <div class="swiper mySwiper main-swiper" id="uni">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="box">
-                        <p> <i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea
-                            of denouncing pleasure and praising
-                            pain
-                            was born and I will give you a complete <i class="fa-solid fa-quote-right"></i></p>
+                        <p> <i class="fa-solid fa-quote-left"></i>I've never met a web developer who truly cares about
+                            their clients' success like abdul saeed does. <i class="fa-solid fa-quote-right"></i></p>
                         <div class="details">
                             <div class="image">
                                 <img src="./images/download__28_-removebg-preview (1).png" alt="img"
@@ -441,8 +441,8 @@
                             </div>
                             <div class="intro-div">
 
-                                <h5>Abdul Saeed</h5>
-                                <p>software developer</p>
+                                <h5>ijaz ahmad</h5>
+                                <p>md MS-college</p>
                                 <div class="stars" style="display:flex; ">
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
@@ -456,10 +456,8 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="box">
-                        <p> <i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea
-                            of denouncing pleasure and praising
-                            pain
-                            was born and I will give you a complete <i class="fa-solid fa-quote-right"></i></p>
+                        <p> <i class="fa-solid fa-quote-left"></i>I've never met a web developer who truly cares about
+                            their clients' success like abdul saeed does. <i class="fa-solid fa-quote-right"></i></p>
                         <div class="details">
                             <div class="image">
                                 <img src="./images/download__32_-removebg-preview.png" alt="img"
@@ -467,8 +465,8 @@
                             </div>
                             <div class="intro-div">
 
-                                <h5>Abdul Saeed</h5>
-                                <p>software developer</p>
+                                <h5>Rao Faisal</h5>
+                                <p>Graphic designer</p>
                                 <div class="stars" style="display:flex; ">
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
@@ -483,10 +481,8 @@
 
                 <div class="swiper-slide">
                     <div class="box">
-                        <p> <i class="fa-solid fa-quote-left"></i>But I must explain to you how all this mistaken idea
-                            of denouncing pleasure and praising
-                            pain
-                            was born and I will give you a complete <i class="fa-solid fa-quote-right"></i></p>
+                        <p> <i class="fa-solid fa-quote-left"></i>I've never met a web developer who truly cares about
+                            their clients' success like abdul saeed does. <i class="fa-solid fa-quote-right"></i></p>
                         <div class="details">
                             <div class="image">
                                 <img src="./images/download (30).jpeg" alt="img"
@@ -494,8 +490,8 @@
                             </div>
                             <div class="intro-div">
 
-                                <h5>Abdul Saeed</h5>
-                                <p>software developer</p>
+                                <h5>Abdullah Naseer</h5>
+                                <p>mern stack developer</p>
                                 <div class="stars" style="display:flex; ">
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
@@ -524,54 +520,57 @@
     <!-- hire me section  -->
 
     <section id="uni">
-        <div class="contact" id="contact" >
+        <div class="contact" id="contact">
             <div>
                 <div class="portfolio">
                     <div style="margin-top: 5px auto; text-align: center;" id="heading">
-        
+
                         <h2 style="text-transform: capitalize; margin-bottom: 0px;"> Hire me 😎</h2>
-            
-                        <hr style="width: 70px; height: 3px; background-color: blue; margin-bottom: 1px; margin-top: 0px; ">
-                        <hr style="width: 40px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px;">
+
+                        <hr
+                            style="width: 70px; height: 3px; background-color: blue; margin-bottom: 1px; margin-top: 0px; ">
+                        <hr
+                            style="width: 40px; height: 3px; background-color: blue; margin-top: 2px; margin-bottom: 1px;">
                         <hr style="width: 10px; height: 3px; background-color: blue; margin-top: 1px;">
-            
-            
-                    </div>
-                
 
-                <h5>"Shyness aside, extend a hearty welcome!"</h5>
-            </div>
-            <div class="contact-main">
-                <div class="contact-main-30 " >
-                    <p style="text-align: center;">Let’s make somthing new, different and more meaningful or make thing
-                        more visual or conceptual?
-                        <span style="color: blueviolet; font-size: larger; font-weight: 700;"> Just
-                            say hello!</span>
-                    </p>
 
-                    <h6><i class="fa-solid fa-envelope"></i></i><a
-                            href="mailto:abdulsaeed135@gmail.com">"abdulsaeed135@gmail.com"</a></h6>
-                    <h6> <i class="fa-solid fa-phone"></i><a href="tel:+923489641020">+92-3489641020</a></h6>
-                    <h6><i class="fa-solid fa-location-dot">Jhang Road , Faisalabad -Punjab</i></h6>
+                    </div>
+
+
+                    <h5>"Shyness aside, extend a hearty welcome!"</h5>
                 </div>
-                <div class="contact-main-70">
-                    <h3
-                        style="text-align: center; border: 1px solid black; width: 70%; margin: 4px auto; background-color:goldenrod;">
-                        Leave us your info</h3>
-                    <form action="#" class="form-sec">
-                        <label for="">Your FullName</label>
-                        <input type="text" required>
-                        <label for="">Your Email</label>
-                        <input type="email" required>
-                        <label for="">Your Message</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </form>
-                    <div style="margin: 5px auto; margin-left: 60%;">
-                        <a href="mailto:abdulsaeed1356@gmail.com">send Message</a>
+                <div class="contact-main">
+                    <div class="contact-main-30 ">
+                        <p style="text-align: center;">Let’s make somthing new, different and more meaningful or make
+                            thing
+                            more visual or conceptual?
+                            <span style="color: blueviolet; font-size: larger; font-weight: 700;"> Just
+                                say hello!</span>
+                        </p>
+
+                        <h6><i class="fa-solid fa-envelope"></i></i><a
+                                href="mailto:abdulsaeed135@gmail.com">"abdulsaeed135@gmail.com"</a></h6>
+                        <h6> <i class="fa-solid fa-phone"></i><a href="tel:+923489641020">+92-3489641020</a></h6>
+                        <h6><i class="fa-solid fa-location-dot">Jhang Road , Faisalabad -Punjab</i></h6>
+                    </div>
+                    <div class="contact-main-70">
+                        <h3
+                            style="text-align: center; border: 1px solid black; width: 70%; margin: 4px auto; background-color:goldenrod;">
+                            Leave us your info</h3>
+                        <form action="#" class="form-sec">
+                            <label for="">Your FullName</label>
+                            <input type="text" required>
+                            <label for="">Your Email</label>
+                            <input type="email" required>
+                            <label for="">Your Message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </form>
+                        <div style="margin: 5px auto; margin-left: 60%;">
+                            <a href="mailto:abdulsaeed1356@gmail.com">send Message</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </section>
 
@@ -583,7 +582,9 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>

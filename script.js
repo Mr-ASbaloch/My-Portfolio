@@ -4,15 +4,31 @@ toggle.onclick = function() {
     navBar.classList.toggle("active")
 }
 
+
+// typing 
+
+var typed = new Typed ("#typing ", {
+  strings:[" 'web developer ' ", "web designer 💻 ", " 'programmer ' "],
+  typeSpeed : 100,
+  backSpeed : 70,
+  loop :true
+
+})
+
+
+
 // pop up 
 
-const popup = document.getElementById("popup");
-const readMoreBtn = document.getElementById("read-more-btn");
-
-readMoreBtn.addEventListener("click", function() {
-  popup.style.display = "block";
-});
+function openPopup(contentId) {
+  var popupContent = document.getElementById(contentId);
+  popupContent.style.display = "block";
+  document.getElementById("popup").style.display = "block";
+}
 
 function closePopup() {
-  popup.style.display = "none";
+  var popupContents = document.getElementsByClassName("popup-content");
+  for (var i = 0; i < popupContents.length; i++) {
+      popupContents[i].style.display = "none";
+  }
+  document.getElementById("popup").style.display = "none";
 }
