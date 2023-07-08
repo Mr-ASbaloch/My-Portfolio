@@ -272,14 +272,15 @@ title {
     /* margin: 120px 45%; */
 
     height: 200px;
-    margin: 5px auto ;
+    margin: 5px auto;
     transform-origin: bottom;
     width: 200px;
 }
+
 .scroll:hover {
     cursor: pointer;
     color: blue;
-    
+
 }
 
 
@@ -418,7 +419,7 @@ title {
 
 .portfolio {
     margin-top: 75px;
-    
+
     /* border: 1px solid navy; */
     /* margin: 75px auto; */
 
@@ -539,7 +540,7 @@ i {
 /* skills section  */
 .container {
     margin: 75px auto;
-   
+
     display: flex;
     width: 100%;
     /* flex-wrap: wrap; */
@@ -550,7 +551,7 @@ i {
 }
 
 .container .card {
-   
+
     position: relative;
     display: flex;
     /* background-color: aqua; */
@@ -753,7 +754,7 @@ svg circle:nth-child(2) {
     content: "";
     width: 10px;
     height: 10px;
-    background:rgb(106, 20, 211);
+    background: rgb(106, 20, 211);
     position: absolute;
     top: -14px;
     right: 0;
@@ -936,11 +937,12 @@ h5 {
 
 /* hire me section  */
 
-.contact{
+.contact {
     margin: 75px auto;
     /* border: 1px saddlebrown solid; */
 }
-.contact-main{
+
+.contact-main {
     margin-top: 85px;
 }
 
@@ -1059,18 +1061,18 @@ textarea {
         justify-content: space-between;
         width: 100%;
         align-items: center;
-    
 
-       
+
+
 
     }
 
 
     .toggler {
-       
+
         display: block;
         margin-top: 0px !important;
-        
+
     }
 
     .navbar-toggler .nav {
@@ -1085,7 +1087,7 @@ textarea {
         background: #c2bebe;
         flex-direction: column;
         overflow: hidden;
-        
+
     }
 
     .navbar-toggler .nav ul {
@@ -1101,9 +1103,9 @@ textarea {
         display: block;
         margin-bottom: 18px;
         font-size: large;
-        color:black;
+        color: black;
         background-color: white;
-        text-align: center  ;
+        text-align: center;
         width: 115px;
         height: 25px;
         transition: 0s;
@@ -1116,9 +1118,9 @@ textarea {
     .nav.active {
         height: 350px;
         transition: 0.8s;
-        background-color:grey;
+        background-color: grey;
         opacity: 0.8;
-        
+
     }
 
     .nav.active ul {
@@ -1144,20 +1146,21 @@ textarea {
     }
 
 }
-@media screen and (max-width:900px ) {
+
+@media screen and (max-width:900px) {
     .service-sec {
         display: flex;
         flex-wrap: wrap;
         margin: 55px auto;
         /* justify-content: space-around; */
         /* gap: 10px; */
-    
+
     }
-    
+
     /* .service-sec h3{
         margin: 10px ;
     } */
-    
+
     .service-sec-25 {
         width: 40%;
         /* margin: 10px; */
@@ -1168,7 +1171,7 @@ textarea {
         font-style: initial;
         box-shadow: 5px 7px 7px rgba(161, 150, 150, 0.3);
         border-radius: 15px;
-    
+
     }
 }
 
@@ -1330,7 +1333,7 @@ textarea {
     }
 
     .swiper-slide {
-        
+
         width: 100%;
         margin-left: 0px;
     }
@@ -1342,6 +1345,11 @@ textarea {
         /* border: 1px solid blue; */
         margin-top: 0px;
         margin-bottom: 10px;
+    }
+
+    .details {
+        width: 100% !important;
+        margin: 3px !important;
     }
 
     .container {
@@ -1356,7 +1364,7 @@ textarea {
     }
 
     .container .card {
-        
+
         position: relative;
         display: flex;
 
@@ -1364,13 +1372,13 @@ textarea {
         height: 170px;
         justify-content: center;
         text-align: center;
-        
+
         margin: 15px;
         padding: 5px;
-       
+
         border-radius: 5px;
         transition: 0.5s;
-       
+
         cursor: pointer;
 
     }
@@ -1391,11 +1399,11 @@ textarea {
     }
 
     .portfolio-box {
-       
+
         display: flex;
         width: 100%;
         position: relative;
-     
+
         border-radius: 15px;
         box-shadow: 0px 2px 7px rgb(56, 56, 56);
 
@@ -1452,10 +1460,15 @@ textarea {
 
 @media screen and (max-width: 375px) {
 
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        /* border: 1px solid black; */
+    }
+
+    #heading hr {
+        display: none !important;
     }
 
     .links,
@@ -1467,14 +1480,17 @@ textarea {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        margin: 0px !important;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
     }
 
     .home-sec .about {
         width: 100%;
-        margin: auto 15px;
+        margin: 0px;
         margin-top: 15px;
         text-align: center;
+        overflow: hidden;
         /* border: 1px solid black; */
 
 
@@ -1483,18 +1499,31 @@ textarea {
     .home-sec .image-sec {
         width: 100%;
         object-fit: cover;
-        margin: auto 10px;
+        margin-top: 25px;
+        display: flex;
+        /* margin: 0px; */
+        margin: 20px auto !important;
     }
 
     .image-sec img {
-        width: 80%;
-        margin: auto 20px;
+        border: 1px solid black;
+        width: 50%;
+        /* margin-top: 25px; */
+
+        margin: 20px auto !important;
     }
 
-    .scroll h4 {
+    .scroll {
+        border: 1px solid black;
+        display: none;
+    }
+
+    
+    /* .scroll i {
         text-align: center;
+        margin: 10px auto;
 
-    }
+    } */
 
     .service-sec {
         display: flex;
@@ -1507,7 +1536,8 @@ textarea {
     .service-sec .service-sec-25 {
 
 
-        width: 100%;
+        width: 80%;
+        margin: 5px auto;
         text-align: center;
     }
 
@@ -1520,23 +1550,25 @@ textarea {
     }
 
     .swiper-slide {
-       
+
         width: 100%;
         margin-left: 0px;
         margin-bottom: 35px;
-        
+
     }
-    
-   
+
+
     .details {
-        margin: 5px auto !important;
-       
+        width: 100% !important;
+        margin: 3px !important;
+
     }
-    .intro-div{
+
+    .intro-div {
         width: 100%;
     }
-    
-    .details .image img{
+
+    .details .image img {
         width: 70px !important;
         border: 1px solid black !important;
         height: 70px !important;
@@ -1553,6 +1585,9 @@ textarea {
         margin-bottom: 20px;
     }
 
+    .skill-per::after{
+        top: -16px;
+    }
     .contact {
         display: flex;
         width: 100%;
@@ -1568,8 +1603,8 @@ textarea {
     }
 
     .contact-main-30 {
-        width: 370px;
-        border: 1px solid saddlebrown;
+        width: 100%;
+        /* border: 1px solid saddlebrown; */
     }
 
     .contact-main-30 p {
@@ -1580,7 +1615,7 @@ textarea {
     .contact-main-70 {
         width: 100%;
         display: block;
-        margin: 10px;
+        margin: 0px;
 
         /* border: 1px solid black; */
 
@@ -1588,20 +1623,39 @@ textarea {
 
     .contact-main-70 .form-sec {
         width: 100% !important;
+        text-align: center;
 
 
+    }
+
+    .contact-main-70 a {
+        display: block;
+        margin-left: 0px;
+        height: min-content;
+        padding: 3px;
+    }
+
+    .contact-main-30 p,
+    h6 {
+        margin: 15px 0px !important;
+
+    }
+
+    .form-sec label {
+        margin: 0px !important;
+        /* background-color: aquamarine; */
     }
 
     .form-sec input,
     textarea {
 
-        height: 5px;
+
         width: 100%;
         outline: none;
         border: none;
         border-bottom: 1px solid black;
         resize: none;
-        margin: 2px auto;
+        margin: 0px;
 
     }
 }
