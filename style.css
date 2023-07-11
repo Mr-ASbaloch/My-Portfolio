@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: white;
-
+    
 }
 
 body section>h2 {
@@ -317,8 +319,12 @@ title {
     color: blueviolet;
     text-align: center;
     margin: 75px auto;
+    /*  */
 }
 
+#services, #uni{
+    
+}
 .service-sec {
     display: flex;
     flex-wrap: wrap;
@@ -1189,6 +1195,7 @@ textarea {
 
     .home-sec .about {
         width: 50%;
+        
 
     }
 
@@ -1270,6 +1277,8 @@ textarea {
         /* margin: auto 15px; */
         margin-top: 15px;
         text-align: center;
+        
+
         /* border: 1px solid black; */
 
 
@@ -1355,8 +1364,8 @@ textarea {
     .container {
         display: flex;
         width: 100%;
-        /* flex-wrap: wrap; */
-        /* gap: 20px;  */
+        flex-wrap: wrap;
+       
         /* border: 1px solid black; */
         justify-content: space-between;
         overflow: hidden;
@@ -1394,7 +1403,8 @@ textarea {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        /* border: 1px solid cadetblue; */
+        margin: 5px;
+       
 
     }
 
@@ -1490,6 +1500,8 @@ textarea {
         margin: 0px;
         margin-top: 15px;
         text-align: center;
+        
+
         overflow: hidden;
         /* border: 1px solid black; */
 
