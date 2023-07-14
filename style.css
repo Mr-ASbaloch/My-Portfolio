@@ -436,12 +436,12 @@ title {
     /* margin: 5px auto; */
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid cadetblue; */
+    
 
 }
 
 .portfolio-box {
-    /* border: 1px solid black; */
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -455,6 +455,7 @@ title {
 
 .portfolio-box img {
     width: 100%;
+    
     background: center;
     object-fit: cover;
     border-radius: 30px;
