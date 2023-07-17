@@ -23,19 +23,19 @@ body section>h2 {
 
 
 .navbar-toggler {
-    /* display: flex; */
+   
     display: none;
 }
 
 .toggler .col {
     background-color: blueviolet !important;
+
 }
 
 .navbar-toggler>img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    /* margin: auto; */
     cursor: pointer;
 }
 
